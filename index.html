@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karim's Portfolio</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+<body>
+
+    <!-- Header including responsive navbar -->
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Karim's Portfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="#interests">Interests</a></li>
+        <li class="nav-item"><a class="nav-link" href="#footer">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    </header>
+
+    <main>
+        <!-- Onboarding section -->
+        <section id="home" class="home container-fluid">
+            
+            <div class="container homeDiv d-flex flex-column">
+                <!-- icons -->
+                <span class="home-icons align-self-center mt-5">
+                    <a target="_blank" href="https://www.linkedin.com/in/karim-almomani-9a7b79319/"><i class="homeicon fa-brands fa-linkedin" aria-hidden="true"></i></a>
+                    <a target="_blank" href="https://github.com/themomani"><i class="homeicon fa-brands fa-github" aria-hidden="true"></i></a>
+                </span>
+                <!-- title -->
+                <h1 class="mt-2 text-white text-center">Hello, my name is <br> Karim Almomani</h1>
+                <p class="text-white mt-2 mb-5 text-center">Computer Engineering Student</p>
+                <!-- resume -->
+                <div class="align-self-center pb-5">
+                    <a href="Files/Karim-Almomani-Resume.docx" download class="btn btn-outline-light resumeBtn">
+                        <i class="fa-solid fa-download me-2"></i> Download Resume
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Onboarding end -->
+
+        <!-- About Start -->
+        <section id="about" class="about d-flex justify-content-center container-fluid bg-black text-white text-center">
+            <div class="container row p-5">
+                <div class="col-12">
+                    <h2 class="mt-5 mb-4">About Me</h2>
+                </div>
+                <div class="col-12 col-md-6">
+                    <img class="img-fluid rounded-3" src="Images/Suit Picture.jpeg" alt="Summary:">
+                </div>
+                <div class="col-12 col-md-6 d-flex align-items-center">
+                    <p class="text-white mt-4">
+                        Hello! My name is Karim Almomani, a 2nd year Computer Engineering student at McMaster University. <br><br>
+                        Apart from my drive for a great career, I have quite a few hobbies. I enjoy leading a healthy lifestyle, while inspiring others to do the same. In addition, I LOVE sports, especially Taekwondo, Soccer, Calisthenics, Volleyball, and many more! <br><br>
+                        I am currently studying Computer Engineering, and hope to explore the vast world of tech. 
+                    </p>
+                </div>
+            </div>
+            
+        </section>
+        <!-- About End -->
+
+        
+        <!-- Skills Start -->
+        
+        <section id="skills" class="container-fluid skills p-5">
+            <hr>   
+            <div class="container text-white">
+                <h2>Skills</h2>
+                <div class="row justify-content-center gy-4">
+                
+                <!-- Bootstrap grid, skill icons: -->
+                <div class="col-6 col-md-3 text-center">
+                    <img src="Images/python.png" class="imgSkill" alt="Pythin">
+                    <p class="caption">Python</p>
+                </div>
+                <div class="col-6 col-md-3 text-center">
+                    <img src="Images/java-script.png" class="imgSkill" alt="JS">
+                    <p class="caption">Javascript</p>
+                </div>
+                <div class="col-6 col-md-3 text-center">
+                    <img src="Images/html-5 (1).png" class="imgSkill" alt="HTML">
+                    <p class="caption">HTML5</p>
+                </div>
+                <div class="col-6 col-md-3 text-center">
+                    <img src="Images/css-3.png" class="imgSkill" alt="CSS">
+                    <p class="caption">CSS3</p>
+                </div>
+                <div class="col-6 col-md-3 text-center">
+                    <img src="Images/bootstrap.png" class="imgSkill" alt="Bootstrap">
+                    <p class="caption">Bootstrap</p>
+                </div>
+                <div class="col-6 col-md-3 text-center">
+                    <img src="Images/autodeskIcon.png" class="imgSkill" alt="AutoDesk">
+                    <p class="caption">AutoDesk Inventor</p>
+                </div>
+                <div class="col-6 col-md-3 text-center">
+                    <img src="Images/git.png" class="imgSkill" alt="Git">
+                    <p class="caption">Git</p>
+                </div>
+                
+                <div class="col-6 col-md-3 text-center">
+                    <img src="Images/icons8-visual-studio-code-32.png" class="imgSkill" alt="VS Code">
+                    <p class="caption">VS Code</p>
+                </div>
+                
+                <div class="col-6 col-md-3 text-center">
+                    <img src="Images/mysql.png" class="imgSkill" alt="MySQL">
+                    <p class="caption">MySQL (Basics)</p>
+                </div>
+                <div class="col-6 col-md-3 text-center">
+                    <img src="Images/php.png" class="imgSkill" alt="PHP">
+                    <p class="caption">PHP (basics)</p>
+                </div>
+                </div>
+            </div>
+        </section>
+        <!-- Extra div for blue - black gradient -->
+         <div class="skillEnd">
+            <br><br><br><br>
+         </div>
+        <!-- Skills End -->
+
+        <!-- Projects Start -->
+
+        <section id="projects" class="projects container-fluid p-5 text-white">
+            <h2>My Projects</h2>
+            <br>
+            <p class="caption hoverText text-center">Hover over cards to flip them! </p>
+            <div class="row gx-2 gy-5 justify-content-center">
+                <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <!-- front -->
+                            <div class="flip-card-front text-white rounded-4 p-2">
+                                <img class="projectImg img-fluid" src="Images/EvMap.png" alt="">
+                                <br>
+                                <h3>EV Charger Finder</h3>
+                                <p>A web-application enabling users to find chargers for their Electric Vehicles in the city of choice using latitude mapping</p>
+                            </div>
+                            <!-- back -->
+                            <div class="flip-card-back rounded-4">
+                            <h3 class="mt-2">EV Charger Finder</h3>
+                            <hr>
+                            <p>
+                                Built with public APIs, Leaflet.js, HTML/CSS/JavaScript, 
+                                and Bootstrap to deliver a responsive EV charger locator 
+                                with interactive mapping.
+                            </p>
+                            <a href="https://themomani.github.io/EV-Charger-Finder/"><button class="btn btn-outline-light">Live Demo</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <!-- front -->
+                            <div class="flip-card-front text-white rounded-4 p-2">
+                                <img class="projectImg img-fluid" src="Images/devVSdev.png" alt="">
+                                <br>
+                                <h3>GitHub Developer Comparator</h3>
+                                <p>A tool to compare GitHub developers by repositories, stars, followers, and more</p>
+                            </div>
+                            <!-- back -->
+                            <div class="flip-card-back rounded-4">
+                            <h3 class="mt-2">GitHub Developer Comparator</h3>
+                            <hr>
+                            <p>
+                                 Fetches real-time developer data from the GitHub API.<br>
+                                 Displays repositories, total stars, followers, and join date.<br>
+                                 Built with JavaScript (async/await, DOM manipulation), Bootstrap, and REST API integration.
+                            </p>
+                            <a href="https://themomani.github.io/Github-Developer-Comparison-Project/"><button class="btn btn-outline-light">Live Demo</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <!-- front -->
+                            <div class="flip-card-front text-white rounded-4 p-2">
+                                <img class="projectImg img-fluid" src="Images/Login.png" alt="Login/Registration Project">
+                                <br>
+                                <h3>Login/Registration System</h3>
+                                <p>A secure user authentication system using PHP, MySQL, and Bootstrap.</p>
+
+                                
+                            </div>
+                            <!-- back -->
+                            <div class="flip-card-back rounded-4 p-3">
+                                <h3 class="mt-2">Login/Registration System</h3>
+                                <hr>
+                                <p>
+                                    Built with secure session handling, password hashing, and CSRF protections.
+                                    <br><br>
+                                    Includes registration, login, logout, and a secure user dashboard.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <!-- front -->
+                            <div class="flip-card-front text-white rounded-4 p-2">
+                                <img class="projectImg img-fluid" src="Images/ZenLenZ.png" alt="ZenLenZ Screenshot">
+                                <br>
+                                <h3>ZenLenZ (Camera stabilizer System)</h3>
+                                <p>A joystick-controlled camera stabilizer to aid users suffering from ALS in taking pictures with their phones</p>
+                            </div>
+                            <!-- back -->
+                            <div class="flip-card-back rounded-4">
+                                <h3 class="mt-2">ZenLenZ</h3>
+                                <hr>
+                                <p>
+                                    Took complete responsibility for the CAD and 3D printed it, acting as the frame for the device 
+                                    <br><br>
+                                    The mechanism utilizes a base, 2 axles controlled by servomotors and a joystick, all powered by an arduino, to orient a phone camera with ease
+
+                                </p>
+                                <a href="https://docs.google.com/presentation/d/1WnYCXBHWbhc6a-YOzlGW_sJFa30viND6fioiotussus/edit?usp=sharing" target="_blank">
+                                    <button class="btn btn-outline-light">View Slides</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <!-- front -->
+                            <div class="flip-card-front text-white rounded-4 p-2">
+                                <img class="projectImg img-fluid" src="Images/PotLidCeremony.png" alt="Modified Pot Lid Prototype">
+                                <br>
+                                <h3>Modified Pot Lid</h3>
+                                <p>
+                                    Ranked top 10 among all projects!
+                                    <br><br>
+                                    Final First-year Engineering project focussed on aiding users suffering from Usher's Syndrome in cooking safely
+                                </p>
+                            </div>
+                            <!-- back -->
+                            <div class="flip-card-back rounded-4">
+                                <h3 class="mt-2">Modified Pot Lid</h3>
+                                <hr>
+                                <p>
+                                    Designed and fabricated a modified pot lid prototype, featuring an axle-based attachable stirrer, high-contrast colours, with a directed steam vent, ridged edges, and many more features to keep users safe while cooking
+                                </p>
+                                <a href="https://docs.google.com/presentation/d/1k_Oqah5wdBKnZWz9ODxkEWdT21M3068G-WTPBNOJsRQ/edit?usp=sharing" target="_blank">
+                                    <button class="btn btn-outline-light">View Slides</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </section>
+        <!-- Projects End -->
+
+        
+
+        <!-- Experience Start -->
+        <section id="experience" class="experience bg-black pb-5">
+            <hr>
+            <h2 class="mt-5">Experience</h2>
+
+            <div class="row gy-5 mt-1 text-white">
+                <div class="col-12 col-md-6 d-flex flex-column align-items-center">
+                    <h3 class="text-center"><i class="fa-solid fa-building-columns"></i>Education<i class="fa-solid fa-building-columns"></i></h3>
+                    <div class="card expCard border-white">
+                        <img src="Images/McMaster.jpeg" class="card-img-top" alt="McMaster University Logo">
+                        <div class="card-body">
+                            <h3 class="text-white text-center fw-bold">McMaster University</h3>
+                            <hr class="border-white bg-white w-100">
+                            <h4 class="card-text text-white text-center">
+                                Computer Engineering <br>
+                                2024-present
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col-12 col-md-6 d-flex flex-column align-items-center">
+                    <h3 class="text-center"><i class="fa-solid fa-building-columns"></i>Experience<i class="fa-solid fa-building-columns"></i></h3>
+                    <p class="caption hoverText text-center">Hover over cards to flip them! </p>
+                    <div class="flip-card cardSizer">
+                        <div class="flip-card-inner">
+                            <!-- front -->
+                            <div class="flip-card-front text-white rounded-4 p-2" style="font-family: 'Times New Roman', Times, serif;">
+                                <img class="projectImg img-fluid" src="Images/Orange.png" alt="Login/Registration Project">
+                                <br>
+                                <h3 class="text-white text-center fw-bold">
+                                    Orange Telecommunications
+                                </h3>
+                                <h4 class="card-text text-white text-center">
+                                    Web Development Internship 
+                                </h4>
+                                
+                            </div>
+                            <!-- back -->
+                            <div class="flip-card-back rounded-4 p-3">
+                                <h3 class="mt-2">Orange Internship</h3>
+                                <hr>
+                                <p>
+                                   Built useful web-applications, gaining proficiency HTML5, CSS, JS, with Bootstrap framework, integrating APIs, while also gaining foundational knowledge on PHP and MySQL
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+
+        </section>
+        <!-- Experience end -->
+                    <h2 class="interestTitle rounded-bottom-5 p-4 m-0"><hr>Interests</h2>
+        <!-- Interests Start -->
+        <section id="interests" class="interests p-5 text-white d-flex flex-column">
+            <br><br><br>
+            <div class="container text-center">
+                <div class="interestBubble bg-black p-3">
+                <h3>Sports</h3>
+                </div>
+                <br>
+                <div class="interestBubble bg-black p-3">
+                <h3>Cooking</h3>
+                </div>
+                <br>
+                <div class="interestBubble bg-black p-3">
+                <h3>Photography</h3>
+                </div>
+                <br>
+                <div class="interestBubble bg-black p-3">
+                <h3>Travelling</h3>
+                </div>
+            </div>
+            
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container p-2" id="footer">
+            <p class="footerBrand mt-5">TheMomani</p>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-5 gy-5">
+                    <div class="col-12 gy-2">
+                        <a href="#home">
+                            <p class="footerSubTitle footerPortfolio">
+                                Back to the top!
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5 gy-5 footerSecondCol">
+                    <div class="row align-content-center">
+                        
+                        
+                        <div class="col-12 gy-5">
+                            <p class="footerSubTitle">
+                                Contact Info:
+                            </p>
+                            <div class="container-fluid mt-1 d-flex justify-content-around">
+                                <a class="text-white" href="mailto:AlmomaniKarim@gmail.com"><i class="footerIcon fa-solid fa-envelope"></i></a>
+                                <a href="https://github.com/TheMomani" class="text-white"><i class="footerIcon fa-brands fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/karim-almomani/" class="text-white"><i class="footerIcon fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+<script src="https://kit.fontawesome.com/b690598890.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

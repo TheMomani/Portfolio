@@ -1,0 +1,272 @@
+/* Portfolio CSS styling */
+
+h2 {
+  font-size: 40px !important;
+  text-align: center;
+  color: white !important;
+  text-shadow: 0 0 15px rgb(201, 242, 255);
+}
+p {
+  font-size: 20px;
+}
+hr {
+  margin: 0 auto !important;
+  border: solid ;
+  height: 3px;
+  width: 50%;
+  
+  margin-bottom: 20px !important;
+  background-color: cyan !important;
+  box-shadow: 0 0 5px cyan,
+              0 0 10px cyan;
+}
+.caption {
+  font-size: 15px !important;
+}
+ /* Home */
+.home {
+    background-image: url(Images/night\ street.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+.homeDiv {
+    padding-top: 100px;
+}
+.homeicon {
+  font-size: 40px;
+  color: white;
+  padding: 20px;
+}
+.homeicon:hover {
+  transition: 0.4s;
+  text-shadow: 0 0 10px white;
+}
+.resumeBtn {
+    animation: blinkBtn 2s infinite;
+       
+}
+.resumeBtn:hover {
+    background-color: transparent;
+    color: aliceblue;
+    animation: none ;
+
+}
+/* Resume Download button blinking animation */
+@keyframes blinkBtn {
+  0%, 100% {
+    background-color: rgba(255, 255, 255, 0.834);
+    color: black;
+  }
+  50% {
+    background-color: transparent;
+    color: rgb(255, 255, 255); 
+  }
+}
+@media (max-width: 768px) {
+
+  .resumeBtn {
+    background-color: rgb(255, 255, 255) !important;
+    color: black !important;
+    animation: none;
+  }
+}
+
+/* Skills */
+.skills {
+  background:linear-gradient(to bottom,black,rgb(0, 79, 93));
+  z-index: 2;
+}
+.imgSkill {
+  width: 40px;
+  text-align: center;
+}
+.skillEnd {
+  background:linear-gradient(to bottom, rgb(0, 79, 93), rgb(0, 0, 32) );
+}
+
+/* Projects */
+.projects {
+  background-image: url(Images/oceanNight.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+
+}
+/* FLIP-CARD Code snippet adapted from W3Schools Flexbox tutorial  */
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  min-width: 300px;
+  height: 475px;
+  perspective: 1000px; 
+  cursor: pointer;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  animation: flipCard 5s forwards; /* play once and stop */
+
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #003932;
+  border: solid;
+  border-width: 1px;
+  border-color: rgb(255, 255, 255);
+  box-shadow: 0 0 10px 1px rgb(255, 255, 255);
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: rgb(41, 41, 41);
+  box-shadow: 0 0 10px 1px white;
+  color: white;
+  transform: rotateY(180deg);
+
+}
+
+.hoverText {
+  text-shadow: 0 0 15px white;
+  animation: vibrate 3s infinite;
+
+}
+
+@keyframes vibrate {
+  0%, 100% {
+    rotate: 5deg;
+
+  }
+  50% {
+    rotate: -5deg;
+    }
+}
+.projectImg {
+  width:100% !important;
+
+}
+
+/* experience */
+.experience {
+  background: linear-gradient(to bottom,rgb(0, 49, 69),black);
+}
+.expCard {
+  background-color: #003932 !important;
+  height: 300px !important;  width: 300px !important;
+  font-family: 'Times New Roman', Times, serif;
+}
+.cardSizer {
+    height: 300px !important;  width: 300px !important;
+}
+
+/* Interests */
+.interestTitle{
+    width: 100%;
+    position: absolute;
+    background: linear-gradient(to bottom,black,transparent);
+}
+.interests {
+  background-image: url(Images/interestPic.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+@media (min-width:750px) {
+  .interests {
+    background-image: url(Images/interestPicCrop.png) !important;
+  }
+  
+}
+.interestBubble {
+  margin-bottom: 40px; margin-top: 40px;
+  text-align: center;
+  border-radius: 50%;
+  width:auto !important;
+  border: solid;
+  box-shadow: 0 0 10px 10px white;
+  display: inline-block !important;   /* makes the div only as wide as its content */
+}
+
+
+
+
+/* Footer */
+footer {
+    color: white;
+    background: linear-gradient(to bottom, black,rgb(0, 41, 41));
+    padding-bottom: 400px;
+}
+footer p {
+    margin-bottom: 0px !important;
+}
+footer hr{
+    display:none
+}
+footer .footerBrand {
+    font-size: 35px;
+    margin-left: 5rem;
+}
+footer .footerSubTitle {
+    font-size: 25px;
+    text-align: center;
+}
+footer .footerPortfolio {
+  animation: blink 2s infinite;
+  text-decoration: underline;
+  color: rgb(255, 255, 255);
+}
+footer .footerPortfolio:hover {
+    cursor: pointer;
+    transform: translate(0,-3px);
+    font-size: 26px;
+    text-shadow: 0 0 20px rgb(255, 255, 255);
+    transition: 0.3s;
+}
+footer .footerSecondCol {
+    border-left: solid;
+    border-width: 1px;
+}
+footer .footerIcon {
+    font-size: 40px;
+}
+footer .footerIcon:hover {
+    animation: blink 2s infinite;
+    text-shadow: 0 0 20px rgb(255, 255, 255);
+}
+@keyframes blink {
+  60%, 100% { opacity: 1; }
+  50%      { color: rgb(0, 154, 154); }
+}
+
+@media (max-width:768px){
+    footer hr {
+        display: block
+    }
+    footer .footerSecondCol {
+        border-left: none;
+    }
+}
