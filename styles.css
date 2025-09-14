@@ -25,14 +25,14 @@ hr {
 }
  /* Home */
 .home {
-    background-image: url(Images/night\ street.jpeg);
+  background-image: url(Images/night\ street.jpeg);
   background-size: cover;
   background-attachment: fixed;
   background-position: top;
   background-repeat: no-repeat;
 }
 .homeDiv {
-    padding-top: 100px;
+  padding-top: 100px;
 }
 .homeicon {
   font-size: 40px;
@@ -48,9 +48,9 @@ hr {
        
 }
 .resumeBtn:hover {
-    background-color: transparent;
-    color: aliceblue;
-    animation: none ;
+  background-color: transparent;
+  color: aliceblue;
+  animation: none ;
 
 }
 /* Resume Download button blinking animation */
@@ -66,6 +66,13 @@ hr {
 }
 @media (max-width: 768px) {
 
+  .home {
+  background-image: url(Images/night\ street.jpeg);
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: top;
+  background-repeat: no-repeat;
+  }
   .resumeBtn {
     background-color: rgb(255, 255, 255) !important;
     color: black !important;
@@ -83,18 +90,41 @@ hr {
   text-align: center;
 }
 .skillEnd {
-  background:linear-gradient(to bottom, rgb(0, 79, 93), rgb(0, 0, 32) );
+  background:linear-gradient(to bottom, rgb(0, 79, 93), rgb(0, 0, 0) );
 }
 
-/* Projects */
+/* Base Projects Style */
 .projects {
   background-image: url(Images/oceanNight.jpeg);
   background-size: cover;
-  background-attachment: fixed;
   background-position: top;
   background-repeat: no-repeat;
-
+  background-attachment: fixed;
 }
+
+/* Mobile: disable fixed background and use solid color */
+@media (max-width: 768px) {
+  .projects {
+    background-image: none;
+    background-color: black;
+    background-attachment: scroll;
+  }
+}
+
+/* Medium screens: swap image but preserve all properties */
+@media (max-width: 2000px) and (min-width: 769px) {
+  .projects {
+    background-image: url(Images/oceanNightCrop.jpeg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+}
+
+
+
+
 /* FLIP-CARD Code snippet adapted from W3Schools Flexbox tutorial  */
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
@@ -169,6 +199,11 @@ hr {
 
 }
 
+/* break gradient */
+.gradientBreak {
+  background: linear-gradient(to bottom, black, rgb(0, 49, 69));
+}
+
 /* experience */
 .experience {
   background: linear-gradient(to bottom,rgb(0, 49, 69),black);
@@ -191,15 +226,15 @@ hr {
 .interests {
   background-image: url(Images/interestPic.png);
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: scroll !important;  /* fixed bg for mobile */
   background-position: top;
   background-repeat: no-repeat;
 }
-@media (min-width:750px) {
+@media (min-width:768px) {
   .interests {
     background-image: url(Images/interestPicCrop.png) !important;
+    background-attachment: fixed !important;
   }
-  
 }
 .interestBubble {
   margin-bottom: 40px; margin-top: 40px;
