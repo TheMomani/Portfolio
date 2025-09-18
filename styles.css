@@ -130,7 +130,7 @@ hr {
 .flip-card {
   background-color: transparent;
   min-width: 300px;
-  height: 475px;
+  height: 500px;
   perspective: 1000px; 
   cursor: pointer;
 }
@@ -210,11 +210,13 @@ hr {
 }
 .expCard {
   background-color: #003932 !important;
-  height: 300px !important;  width: 300px !important;
+  height: 370px !important;  width: 300px !important;
   font-family: 'Times New Roman', Times, serif;
+  box-shadow: 0 0 10px 1px rgb(255, 255, 255);
+
 }
 .cardSizer {
-    height: 300px !important;  width: 300px !important;
+    height: 370px !important;  width: 300px !important;
 }
 
 /* Interests */
@@ -236,15 +238,20 @@ hr {
     background-attachment: fixed !important;
   }
 }
-.interestBubble {
+/*.interestBubble {
   margin-bottom: 40px; margin-top: 40px;
   text-align: center;
   border-radius: 50%;
   width:auto !important;
   border: solid;
-  box-shadow: 0 0 10px 10px white;
-  display: inline-block !important;   /* makes the div only as wide as its content */
+  text-shadow: 0 0 10px 10px rgb(0, 0, 0);
+  display: inline-block !important;   /* makes the div only as wide as its content 
+} */
+
+.interestText {
+  text-shadow: 0 0 20px 20px rgb(0, 0, 0) !important;
 }
+
 
 
 
