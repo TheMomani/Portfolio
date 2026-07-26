@@ -1,5 +1,7 @@
 /* Portfolio CSS styling */
-
+body {
+  background-color: black;
+}
 h2 {
   font-size: 40px !important;
   text-align: center;
