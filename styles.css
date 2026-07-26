@@ -110,6 +110,11 @@ hr {
     background-attachment: scroll;
   }
 }
+.projectsTitle{
+    width: 100%;
+    position: absolute;
+    background: linear-gradient(to bottom,black,transparent);
+}
 
 /* Medium screens: swap image but preserve all properties */
 @media (max-width: 2000px) and (min-width: 769px) {
@@ -216,7 +221,7 @@ hr {
 
 }
 .cardSizer {
-    height: 370px !important;  width: 300px !important;
+    height: 390px !important;  width: 300px !important;
 }
 
 /* Interests */
@@ -226,7 +231,7 @@ hr {
     background: linear-gradient(to bottom,black,transparent);
 }
 .interests {
-  background-image: url(Images/interestPic.png);
+  background-image: url(Images/InterestPic2.png);
   background-size: cover;
   background-attachment: scroll !important;  /* fixed bg for mobile */
   background-position: top;
@@ -234,7 +239,7 @@ hr {
 }
 @media (min-width:768px) {
   .interests {
-    background-image: url(Images/interestPicCrop.png) !important;
+    background-image: url(Images/InterestPic2crop.png) !important;
     background-attachment: fixed !important;
   }
 }
