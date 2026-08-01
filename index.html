@@ -183,6 +183,60 @@
                         <div class="flip-card-inner">
                             <!-- front -->
                             <div class="flip-card-front text-white rounded-4 p-2">
+                                <img class="projectImg img-fluid" src="Images/3dresult.png" alt="">
+                                <br>
+                                <h3 class="pt-3">3D Environment Scanner</h3>
+                                <p>
+                                    A 360° scanning device using an ARM Cortex-M4 MCU and a Time-of-Flight 
+                                    sensor to reconstruct real environments as a live 3D point cloud.
+                                </p>
+                            </div>
+                            <!-- back -->
+                            <div class="flip-card-back rounded-4">
+                            <h3 class="mt-2">3D Environment Scanner</h3>
+                            <hr>
+                            <p>
+                                Built Embedded C firmware on a TI MSP432E401Y (ARM Cortex-M4) to drive a VL53L1X ToF sensor over I2C and a stepper motor via GPIO, streaming data over UART. 
+                                Paired with a Python (PySerial, Matplotlib) program for real-time 3D visualization and anomaly detection.
+                            </p>
+                            <a target="_blank" href="https://github.com/TheMomani/3D-Environment-Scanning-Device"><button class="btn btn-outline-light">Documentation</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <!-- front -->
+                            <div class="flip-card-front text-white rounded-4 p-2">
+                                <img class="projectImg img-fluid" src="Images/DACbread.png" alt="">
+                                <br>
+                                <h3 class="pt-3">Digital to Analog Converter</h3>
+                                <p>
+                                    A 3-bit DAC built from binary-weighted resistors and op-amps, 
+                                    converting digital inputs into a precise analog staircase output.
+                                </p>
+                            </div>
+                            <!-- back -->
+                            <div class="flip-card-back rounded-4">
+                            <h3 class="mt-2">DAC Project</h3>
+                            <hr>
+                            <p>
+                                Designed and simulated in LTSpice using an inverting summing amplifier, 
+                                then built and validated on hardware with a Digilent Analog Discovery 2.
+                                Measured -1% gain error and -4.6% max differential non-linearity, 
+                                with comparator/buffer stages to keep input current draw under 10 nA.
+                            </p>
+                            <a target="_blank" href="https://themomani.github.io/EV-Charger-Finder/"><button disabled class="btn btn-outline-light">Documentation (in progress)</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <!-- front -->
+                            <div class="flip-card-front text-white rounded-4 p-2">
                                 <img class="projectImg img-fluid" src="Images/EvMap.png" alt="">
                                 <br>
                                 <h3 class="pt-3">EV Charger Finder</h3>
