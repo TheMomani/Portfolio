@@ -180,6 +180,7 @@
             <br><br><br>
             <p class="caption hoverText text-center">Hover over cards to flip them! </p>
             <div class="row gx-2 gy-5 justify-content-center">
+                <!-- Card 1 start -->
                 <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
                     <div class="flip-card">
                         <div class="flip-card-inner">
@@ -202,6 +203,37 @@
                                 Paired with a Python (PySerial, Matplotlib) program for real-time 3D visualization and anomaly detection.
                             </p>
                             <a target="_blank" href="https://github.com/TheMomani/3D-Environment-Scanning-Device"><button class="btn btn-outline-light">Documentation</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 1 End -->
+                 <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <!-- front -->
+                            <div class="flip-card-front text-white rounded-4 p-2">
+                                <!-- <img class="projectImg img-fluid" src="Images/3dresult.png" alt=""> -->
+                                <br>
+                                <h3 class="pt-3">Real-Time Radial Object Detector</h3>
+                                <p>
+                                    A device which utilizes FreeRTOS to sync between different GPIO stepper-Motor, I2C ToF, UART, and interrupt 
+                                    tasks, to detect objects in a 3 meter radius and alert the user.
+                                    <br><br>
+                                    (Full Documentation still in progress)
+                                </p>
+                            </div>
+                            <!-- back -->
+                            <div class="flip-card-back rounded-4">
+                            <h3 class="mt-2">Object Detection System</h3>
+                            <hr>
+                            <p>
+                                Utilizes FreeRTOS's features to ensure fault-free operation of varying-priority 
+                                tasks on an ARM Cortex-M4. <br>
+                                Implemented Interrupt Service Routines, UART resource protection via Mutexes, 
+                                and Task Notifications, achieving a sensor reaction latency of 39ms, measured via pin observation on oscillosope.
+                            </p>
+                            <a><button disabled class="btn btn-outline-warning">Documentation (in progress)</button></a>
                             </div>
                         </div>
                     </div>
@@ -229,7 +261,7 @@
                                 Measured -1% gain error and -4.6% max differential non-linearity, 
                                 with comparator/buffer stages to keep input current draw under 10 nA.
                             </p>
-                            <a target="_blank" href="https://themomani.github.io/EV-Charger-Finder/"><button disabled class="btn btn-outline-light">Documentation (in progress)</button></a>
+                            <button disabled class="btn btn-outline-danger">Contact me for documentation</button>
                             </div>
                         </div>
                     </div>
