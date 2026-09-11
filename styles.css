@@ -97,7 +97,7 @@ hr {
 
 /* Base Projects Style */
 .projects {
-  background-image: url(Images/oceanNight.jpeg);
+  background-image: url(Images/sunsetPortcrop.jpeg);
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -121,7 +121,7 @@ hr {
 /* Medium screens: swap image but preserve all properties */
 @media (max-width: 2000px) and (min-width: 769px) {
   .projects {
-    background-image: url(Images/oceanNightCrop.jpeg);
+    background-image: url(Images/sunsetPortcrop.jpeg);
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
